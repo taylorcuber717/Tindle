@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		73419A6C2187A068006AED06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73419A6B2187A068006AED06 /* AppDelegate.swift */; };
-		73419A6E2187A068006AED06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73419A6D2187A068006AED06 /* ViewController.swift */; };
+		73419A6E2187A068006AED06 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73419A6D2187A068006AED06 /* CardsViewController.swift */; };
 		73419A712187A068006AED06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73419A6F2187A068006AED06 /* Main.storyboard */; };
 		73419A732187A06A006AED06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73419A722187A06A006AED06 /* Assets.xcassets */; };
 		73419A762187A06A006AED06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73419A742187A06A006AED06 /* LaunchScreen.storyboard */; };
 		73419A812187A06A006AED06 /* TindleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73419A802187A06A006AED06 /* TindleUITests.swift */; };
+		73419A8C21889D11006AED06 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73419A8B21889D11006AED06 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,7 @@
 /* Begin PBXFileReference section */
 		73419A682187A068006AED06 /* Tindle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tindle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73419A6B2187A068006AED06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73419A6D2187A068006AED06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73419A6D2187A068006AED06 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		73419A702187A068006AED06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73419A722187A06A006AED06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73419A752187A06A006AED06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +37,7 @@
 		73419A7C2187A06A006AED06 /* TindleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TindleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73419A802187A06A006AED06 /* TindleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TindleUITests.swift; sourceTree = "<group>"; };
 		73419A822187A06A006AED06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73419A8B21889D11006AED06 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				73419A6B2187A068006AED06 /* AppDelegate.swift */,
-				73419A6D2187A068006AED06 /* ViewController.swift */,
+				73419A6D2187A068006AED06 /* CardsViewController.swift */,
 				73419A6F2187A068006AED06 /* Main.storyboard */,
+				73419A8B21889D11006AED06 /* ProfileViewController.swift */,
 				73419A722187A06A006AED06 /* Assets.xcassets */,
 				73419A742187A06A006AED06 /* LaunchScreen.storyboard */,
 				73419A772187A06A006AED06 /* Info.plist */,
@@ -197,7 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73419A6E2187A068006AED06 /* ViewController.swift in Sources */,
+				73419A8C21889D11006AED06 /* ProfileViewController.swift in Sources */,
+				73419A6E2187A068006AED06 /* CardsViewController.swift in Sources */,
 				73419A6C2187A068006AED06 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
