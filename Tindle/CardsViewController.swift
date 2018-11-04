@@ -30,6 +30,7 @@ class CardsViewController: UIViewController {
     
     @IBAction func onTapCard(_ sender: Any) {
         cardImage.transform = CGAffineTransform.identity
+        cardImage.center = view.center
         cardImage.isHidden = false
     }
     @IBAction func didPanCard(_ sender: UIPanGestureRecognizer) {
@@ -70,23 +71,38 @@ class CardsViewController: UIViewController {
     func pushOffScreen(translationCurrent: Int!) {
         if translationCurrent > 0 {
             if translationCurrent > 50 {
-                UIView.animate(withDuration: 1) {
+                UIView.animate(withDuration: 0.1, animations: {
                     self.cardImage.center.x += 100
+                }) { (success) in
+                    if success {
+                        self.cardImage.isHidden = true
+                    }
                 }
             } else {
-                UIView.animate(withDuration: 1) {
+                UIView.animate(withDuration: 0.1, animations: {
                     self.cardImage.transform = CGAffineTransform.identity
+                }) { (success) in
+                    if success {
+                        self.cardImage.isHidden = false
+                    }
                 }
             }
         } else {
             if translationCurrent < -50 {
-                UIView.animate(withDuration: 1) {
+                UIView.animate(withDuration: 0.1, animations: {
                     self.cardImage.center.x -= 100
-                    self.cardImage.isHidden = true
+                }) { (success) in
+                    if success {
+                        self.cardImage.isHidden = true
+                    }
                 }
             } else {
-                UIView.animate(withDuration: 1) {
+                UIView.animate(withDuration: 0.1, animations: {
                     self.cardImage.transform = CGAffineTransform.identity
+                }) { (success) in
+                    if success {
+                        self.cardImage.isHidden = false
+                    }
                 }
             }
         }
@@ -98,7 +114,8 @@ class CardsViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let profileViewController = segue.destination as! ProfileViewController
-        profileViewController.profileImageView.image = cardImage.image
+        //print(profileViewController.profileImageView)
+        profileViewController.passedImage = cardImage.image
     }
     
 }
